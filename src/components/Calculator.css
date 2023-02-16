@@ -1,0 +1,29 @@
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+table {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.input_output_textBox {
+    width: 500px;
+    border: none;
+    text-align: end;
+}
+
+.input_output_textBox:focus {
+    outline: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
