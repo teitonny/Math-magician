@@ -1,47 +1,49 @@
 
 .main-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
 }
 
 table {
-    width: 500px;
-    height: 500px;
-    text-align: center;
-    background-color: #E0E0E0;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  background-color: #e0e0e0;
 }
 
 .inputHead {
-    background-color: #858694;
+  background-color: #858694;
 }
 
 .input_output_textBox {
-    width: 500px;
-    border: none;
-    text-align: end;
-    height: 100%;
-    background-color: #858694;
-    color: #FFF;
-    font-size: 100%;
+  width: 500px;
+  border: none;
+  text-align: end;
+  height: 100%;
+  background-color: #858694;
+  color: #fff;
+  font-size: 100%;
 }
 
 .input_output_textBox:focus {
-    outline: none;
+  outline: none;
 }
 
-table, th, td {
-    border: 2px solid #cfcfd1;
-    border-collapse: collapse;
-    cursor: pointer;
+table,
+th,
+td {
+  border: 2px solid #cfcfd1;
+  border-collapse: collapse;
+  cursor: pointer;
 }
 
 .orange {
-    background-color: #f5913e;
+  background-color: #f5913e;
 }
 
 ::placeholder {
-    color: #FFF;
+  color: #fff;
 }
