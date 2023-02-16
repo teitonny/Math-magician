@@ -11,12 +11,21 @@ table {
     width: 500px;
     height: 500px;
     text-align: center;
+    background-color: #E0E0E0;
+}
+
+.inputHead {
+    background-color: #858694;
 }
 
 .input_output_textBox {
     width: 500px;
     border: none;
     text-align: end;
+    height: 100%;
+    background-color: #858694;
+    color: #FFF;
+    font-size: 100%;
 }
 
 .input_output_textBox:focus {
@@ -24,6 +33,15 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 2px solid #cfcfd1;
     border-collapse: collapse;
+    cursor: pointer;
+}
+
+.orange {
+    background-color: #f5913e;
+}
+
+::placeholder {
+    color: #FFF;
 }
