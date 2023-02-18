@@ -9,27 +9,38 @@
 
 table {
   width: auto;
-  height: 500px;
+  height: 25rem;
   text-align: center;
   background-color: #e0e0e0;
 }
 
 .inputHead {
   background-color: #858694;
+  text-align: center;
 }
 
 .input_output_textBox {
-  width: 500px;
+  width: 25rem;
   border: none;
   text-align: end;
   height: 100%;
   background-color: #858694;
   color: #fff;
-  font-size: 100%;
+
+  /* font-size: 1.5rem; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1.2rem;
+  min-height: 20px;
 }
 
 .input_output_textBox:focus {
   outline: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 table,
@@ -40,8 +51,10 @@ td {
   cursor: pointer;
 }
 
-td {
-  width: 50px;
+th div { text-align: center; }
+
+th {
+  width: 2rem;
 }
 
 .orange {
