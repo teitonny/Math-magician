@@ -1,44 +1,68 @@
 import './Calculator.css';
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
 
 function Calculator() {
+  const [state, setState] = useState({
+    total: 0,
+    next: null,
+    operator: null,
+  });
+
+  const onClickHandler = (event) => {
+    const result = (calculate(state, event.target.textContent));
+    setState(result);
+  };
+
+  const displayResults = (event) => {
+    setState({ total: event.target.textContent });
+  };
+
+  const { total, next, operation } = state;
   return (
     <div className="main-wrapper">
       <table>
-        <tr>
-          <th colSpan="4" className="inputHead">
-            {' '}
-            <input placeholder="0" className="input_output_textBox" />
-          </th>
-        </tr>
-        <tr>
-          <th>AC</th>
-          <th>+/-</th>
-          <th>%</th>
-          <th className="orange">÷</th>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-          <td className="orange">x</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td className="orange">-</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td className="orange">+</td>
-        </tr>
-        <tr>
-          <td colSpan="2">0</td>
-          <td>.</td>
-          <td className="orange">=</td>
-        </tr>
+        <tbody>
+          <tr>
+            <th colSpan="4" className="inputHead">
+              {' '}
+              <div className="input_output_textBox" onChange={displayResults}>
+                {total}
+                {operation}
+                {next}
+              </div>
+            </th>
+          </tr>
+          <tr>
+            <th onClick={onClickHandler}>AC</th>
+            <th onClick={onClickHandler}>+/-</th>
+            <th onClick={onClickHandler}>%</th>
+            <th className="orange" onClick={onClickHandler}>÷</th>
+          </tr>
+          <tr>
+            <th onClick={onClickHandler}>7</th>
+            <th onClick={onClickHandler}>8</th>
+            <th onClick={onClickHandler}>9</th>
+            <th className="orange" onClick={onClickHandler}>x</th>
+          </tr>
+          <tr>
+            <th onClick={onClickHandler}>4</th>
+            <th onClick={onClickHandler}>5</th>
+            <th onClick={onClickHandler}>6</th>
+            <th className="orange" onClick={onClickHandler}>-</th>
+          </tr>
+          <tr>
+            <th onClick={onClickHandler}>1</th>
+            <th onClick={onClickHandler}>2</th>
+            <th onClick={onClickHandler}>3</th>
+            <th className="orange" onClick={onClickHandler}>+</th>
+          </tr>
+          <tr>
+            <th colSpan="2" onClick={onClickHandler}>0</th>
+            <th onClick={onClickHandler}>.</th>
+            <th className="orange" onClick={onClickHandler}>=</th>
+          </tr>
+        </tbody>
       </table>
     </div>
   );
