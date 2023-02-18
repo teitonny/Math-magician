@@ -8,7 +8,7 @@
 }
 
 table {
-  width: 500px;
+  width: auto;
   height: 500px;
   text-align: center;
   background-color: #e0e0e0;
@@ -38,6 +38,10 @@ td {
   border: 2px solid #cfcfd1;
   border-collapse: collapse;
   cursor: pointer;
+}
+
+td {
+  width: 50px;
 }
 
 .orange {

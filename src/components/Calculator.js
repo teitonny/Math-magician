@@ -1,5 +1,4 @@
 import './Calculator.css';
-import Buttons from './Buttons';
 
 function Calculator() {
   return (
@@ -12,12 +11,10 @@ function Calculator() {
           </th>
         </tr>
         <tr>
-          <th>
-            <Buttons />
-          </th>
+          <th>AC</th>
           <th>+/-</th>
           <th>%</th>
-          <th className="orange">v</th>
+          <th className="orange">÷</th>
         </tr>
         <tr>
           <td>7</td>
