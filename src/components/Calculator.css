@@ -26,6 +26,7 @@ table {
   height: 100%;
   background-color: #858694;
   color: #fff;
+
   /* font-size: 1.5rem; */
   display: flex;
   justify-content: flex-end;
@@ -50,7 +51,7 @@ td {
   cursor: pointer;
 }
 
-th div { text-align: center;}
+th div { text-align: center; }
 
 th {
   width: 2rem;
