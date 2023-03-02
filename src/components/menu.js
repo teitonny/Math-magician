@@ -3,7 +3,7 @@ import menuCss from './menu.module.css';
 
 const Menu = () => (
   <div className={menuCss.navContainer}>
-    <div className={menuCss.mathLogo}>Math Magicians</div>
+    <div className={menuCss.mathLogo}><Link to="/">Math magician</Link></div>
     <ul className={menuCss.navbar}>
       <li className="nav-item">
         <Link to="/">Home</Link>
