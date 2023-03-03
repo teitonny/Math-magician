@@ -26,7 +26,7 @@ function Calculator() {
           <tr>
             <th colSpan="4" className="inputHead">
               {' '}
-              <div className="input_output_textBox" onChange={displayResults}>
+              <div className="input_output_textBox" data-testid="display" onChange={displayResults}>
                 {total}
                 {operation}
                 {next}
