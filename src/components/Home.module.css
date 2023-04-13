@@ -1,4 +1,14 @@
 
 .homeContainer {
   margin-left: 3rem;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: -50px;
+  margin-top: -50px;
+}
+
+.homeHeader {
+  color: #858694;
 }

@@ -4,6 +4,7 @@ import Calculator from './components/Calculator';
 import Home from './components/Home';
 import Quote from './components/Quote';
 import Menu from './components/menu';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Calculator" element={<Calculator />} />
         <Route path="/Quote" element={<Quote />} />
       </Routes>
+      <Footer />
     </>
   );
 }

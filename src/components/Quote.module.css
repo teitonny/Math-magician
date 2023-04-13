@@ -2,6 +2,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   align-items: center;
+}
+
+.Wrapper {
+  margin-bottom: 10%;
+  border: dashed 1px #353535;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 5%;
+  font-style: oblique;
+  overflow: auto;
+  color: #353535;
+}
+
+.Wrapper > span {
+  float: right;
+  color: #f5913e;
+  font-style: normal;
+  font-weight: 700;
 }
