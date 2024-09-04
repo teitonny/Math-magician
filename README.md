@@ -102,7 +102,15 @@ Example command:
   npm install
 ```
 
-The above command installs necessary node modules used in the project
+The above command installs necessary node modules used in the project.
+
+### Eslint error fix
+
+In case you encounter eslint errors, runt this code to clear the errors:
+
+```sh
+  npx eslint "**/*.{js,jsx}" --fix
+```
 
 ### Usage
 
